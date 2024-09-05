@@ -1,5 +1,6 @@
-package br.com.alura.minhaMusica.modelos.principal;
+package br.com.alura.minhaMusica.principal;
 
+import br.com.alura.minhaMusica.modelos.MinhaPreferidas;
 import br.com.alura.minhaMusica.modelos.Musica;
 import br.com.alura.minhaMusica.modelos.Podcast;
 
@@ -28,5 +29,10 @@ public class Principal {
         for (int i = 0; i < 1000; i++) {
             podcast.curte();
         }
+
+        MinhaPreferidas preferidas = new MinhaPreferidas();
+
+        preferidas.inclui(musica);
+        preferidas.inclui(podcast);
     }
 }
